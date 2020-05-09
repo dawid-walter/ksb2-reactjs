@@ -1,5 +1,6 @@
 import React from "react";
 import axios from 'axios';
+import './CarForm.css';
 
 class CarForm extends React.Component {
     state = {
@@ -47,7 +48,7 @@ class CarForm extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} class="form-style-5">
                     <label>
                         Car id:
                         <input type="text" name="make" onChange={this.idHandleChange}/>
